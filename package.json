@@ -1,0 +1,13 @@
+{
+  "name": "funny-dares",
+  "version": "1.0.0",
+  "description": "Spin the Wheel of Dares",
+  "type": "module",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'Static HTML - no build needed'"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^1.4.1"
+  }
+}
