@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/_vercel/speed-insights/script.js"></script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Spin the Wheel of Dares 🎯</title>
@@ -406,15 +408,6 @@
 </head>
 <body>
 
-<!-- Password Screen -->
-<div id="passwordScreen">
-  <h2>🔐 Enter Password</h2>
-  <p>This wheel is for VIPs only 😏</p>
-  <input type="password" id="passwordInput" placeholder="Type password..." />
-  <p id="wrongMsg">❌ Wrong password! Try again.</p>
-  <button id="unlockBtn" onclick="checkPassword()">UNLOCK 🔓</button>
-</div>
-
 <header>
   <h1>🎯 Wheel of Dares</h1>
   <p>Spin it. Own it. No excuses! 😈</p>
@@ -459,21 +452,6 @@
 <footer>Built with Claude 🤖 • Dare responsibly 😄</footer>
 
 <script>
-  // Password protection
-  function checkPassword() {
-    const input = document.getElementById('passwordInput').value;
-    const wrongMsg = document.getElementById('wrongMsg');
-    const inputEl = document.getElementById('passwordInput');
-    if (input === 'ahmad') {
-      document.getElementById('passwordScreen').classList.add('fade-out');
-      setTimeout(() => document.getElementById('passwordScreen').style.display = 'none', 500);
-    } else {
-      wrongMsg.style.display = 'block';
-      inputEl.classList.add('wrong');
-      inputEl.value = '';
-      setTimeout(() => inputEl.classList.remove('wrong'), 400);
-    }
-  }
 
   // Allow pressing Enter key
   document.addEventListener('DOMContentLoaded', () => {
